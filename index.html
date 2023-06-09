@@ -1,368 +1,663 @@
-<!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <script src="jquery.min.js"></script>
-  <style>
-    html, body {
-      margin: 0;
-      height: 100vh;
-      overflow-x: hidden;
-      overscroll-behavior: none;
-    }
+	<head>
+		<link href='styles.css' rel='stylesheet'>
+		<meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>1984</title>
+    <link rel="icon" href="images/icon.png" type="image/png">
 
-    .loading-element {
-      display: none;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      height: 4px;
-      width: 128px;
-      transform: translate(-50%, -50%);
-      user-select: none;
-      pointer-events: none;
-      animation: loading-element-enter .2s ease .5s;
-      animation-fill-mode: backwards;
-      background-color: #eee;
-    }
+	</head>
+    
+	<body style="margin:0px;">
+		<div class='sk-ab sk-Artboard'>
+			<div class='sk-asset sk-Rectangle-2D6A2225-33B6-4347-A546-F40D09D40D48'></div>
+			<div class='sk-asset sk-Group-2-06818D18-EE74-40A3-98D4-F970912C2B28'>
+				<div class='sk-asset sk-Group-2EDEB322-1346-43BD-B2CD-D8A090313EFE'>
+					<div class='sk-asset sk-Oval-E5003990-2DDA-48B2-A79C-84144B8FB523'></div>
+					<div class='sk-asset sk-Oval-D8902B01-95F5-4AC0-9294-5FC5ECA764FA'></div>
+				</div>
+				<div class='sk-asset sk-Group-73A4BC9B-EC81-4B2C-BEF8-BFA99F59AA4B'>
+					<div class='sk-asset sk-Oval-72229795-24FC-4226-90E3-DC1F34F28366'></div>
+					<div class='sk-asset sk-Oval-96B418FF-1F39-41E6-9C0A-E6C2CD15F9F2'></div>
+				</div>
+				<div class='sk-asset sk-Group-1A8310AA-AC38-434E-8F7C-E60CBDFE39A9'>
+					<div class='sk-asset sk-Oval-9606236A-F378-4E69-9077-CEEAD4B63E15'></div>
+					<div class='sk-asset sk-Oval-6E9BC0D7-1A23-43EF-AF23-A55B9FFDDC43'></div>
+				</div>
+				<div class='sk-asset sk-Group-6F2F175F-AB85-41C2-AACE-1C2BCA390065'>
+					<div class='sk-asset sk-Oval-3EF05C68-7812-4625-8028-9334346D2833'></div>
+					<div class='sk-asset sk-Oval-3725EAC5-1BB2-4DB1-9CEE-2448116F2959'></div>
+				</div>
+				<div class='sk-asset sk-Group-1C6C046F-D805-4A47-8FF9-A60B9DD50C23'>
+					<div class='sk-asset sk-Oval-6718898B-3524-41C7-A454-5705A00068B5'></div>
+					<div class='sk-asset sk-Oval-BD604C70-CCB2-4A15-8C41-816693E6ED6D'></div>
+				</div>
+				<div class='sk-asset sk-Group-1E400566-1ADD-497C-AF9A-09CFB7E730DB'>
+					<div class='sk-asset sk-Oval-F4F26BD1-CACE-43CB-9715-0AADCB429295'></div>
+					<div class='sk-asset sk-Oval-3CD41B82-3366-47BD-9AEE-2E1771A0FB2C'></div>
+				</div>
+				<div class='sk-asset sk-Group-0448C05E-81B1-4F1D-8729-974BC7BF980D'>
+					<div class='sk-asset sk-Oval-1FF6617F-6BFA-40FD-B99E-C38504FCBA71'></div>
+					<div class='sk-asset sk-Oval-9691F327-4C97-4E7C-A7C7-E113AC8D0949'></div>
+				</div>
+				<div class='sk-asset sk-Group-51B10DD8-26F4-4B99-A2E6-B4070B87BD4D'>
+					<div class='sk-asset sk-Oval-04DBCB7D-875A-40D5-9A9C-0334A84CD0FE'></div>
+					<div class='sk-asset sk-Oval-24D8C300-6A4D-4193-A6EF-A300C84D6976'></div>
+				</div>
+				<div class='sk-asset sk-Group-D4C299B2-80BF-4D19-8B3C-92AE9FDC21FD'>
+					<div class='sk-asset sk-Oval-1E524CD9-3F86-4413-99AF-950053E01792'></div>
+					<div class='sk-asset sk-Oval-3A636691-8A1F-41E0-B348-FB8D221CC8B5'></div>
+				</div>
+				<div class='sk-asset sk-Group-5E547B5F-EC33-4A88-B296-4C79339565AF'>
+					<div class='sk-asset sk-Oval-AF86A415-D715-43DA-9DF2-FACDB2831C33'></div>
+					<div class='sk-asset sk-Oval-09303A63-8858-4952-9CDF-BBAFAB77EBF2'></div>
+				</div>
+				<div class='sk-asset sk-Group-05284267-15A7-46F6-A11B-57BD3C0D536E'>
+					<div class='sk-asset sk-Oval-ED5C85CB-F6C3-4380-8129-0280C0CF4609'></div>
+					<div class='sk-asset sk-Oval-7F7DE339-51DA-41DA-BB1F-997EF34C402E'></div>
+				</div>
+				<div class='sk-asset sk-Group-20C483EB-DC9F-4562-8252-11B7FD5B1272'>
+					<div class='sk-asset sk-Oval-62A92BB2-2BDB-41CB-8620-030F997EAA78'></div>
+					<div class='sk-asset sk-Oval-DE1CE5B7-0E68-4328-80BB-6A4F9EC03022'></div>
+				</div>
+				<div class='sk-asset sk-Group-1D946B78-048F-456C-BFE4-C143E09FB6D0'>
+					<div class='sk-asset sk-Oval-7B45F598-1566-419F-AA44-DED9D6D3C941'></div>
+					<div class='sk-asset sk-Oval-17DAD512-09B5-4976-830C-32BBF1B76E53'></div>
+				</div>
+				<div class='sk-asset sk-Group-333AFA7A-4C85-467B-8AED-D30FB17AEA27'>
+					<div class='sk-asset sk-Oval-3A33A953-BB15-40AB-AF77-B8F820365855'></div>
+					<div class='sk-asset sk-Oval-B9C64616-D3FF-4A52-AF84-BAF9C3900A2A'></div>
+				</div>
+				<div class='sk-asset sk-Group-409C5403-4E0E-4A3F-BD4C-C75A3CEABD27'>
+					<div class='sk-asset sk-Oval-3B51B023-E316-4806-8139-EF4E148A727A'></div>
+					<div class='sk-asset sk-Oval-4EC7523F-F834-4FD8-8544-E85286A1589D'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-143031AD-0CFB-4CF0-8D25-57D7ADAC7666'>
+				<div class='sk-asset sk-Group-8F5DC099-F2AF-43F6-86F9-9DB456F96BDC'>
+					<div class='sk-asset sk-Oval-EE9311E7-A4B6-4D05-BA35-2B140551FA31'></div>
+					<div class='sk-asset sk-Oval-276486DC-233B-427B-9564-C7E319BB0F38'></div>
+				</div>
+				<div class='sk-asset sk-Group-4E48FA3E-8367-4191-A34D-2090E3B2128F'>
+					<div class='sk-asset sk-Oval-C0B9B6E4-9383-4FD5-8F17-5B12C6390AD5'></div>
+					<div class='sk-asset sk-Oval-CBD1E29B-8989-4ABA-B149-280E54CB902D'></div>
+				</div>
+				<div class='sk-asset sk-Group-8AE777F0-1027-449A-83FF-CF151668C3FD'>
+					<div class='sk-asset sk-Oval-29FA2590-ACC7-4BE8-B54B-1BCB20EC6177'></div>
+					<div class='sk-asset sk-Oval-C0ABAF86-1575-46E7-B58C-F54D46B5AAB1'></div>
+				</div>
+				<div class='sk-asset sk-Group-BA0BFAFA-6A3A-4D19-B59E-0882982E2E55'>
+					<div class='sk-asset sk-Oval-51EA2181-37EC-454C-8685-961F08F4264E'></div>
+					<div class='sk-asset sk-Oval-0E26894B-975E-424A-B76A-BD6B6CA462D5'></div>
+				</div>
+				<div class='sk-asset sk-Group-FB9AD5CE-93B6-4E30-AB60-B900884C0F88'>
+					<div class='sk-asset sk-Oval-2BBB195C-A0C7-4D93-AF14-72D145EB44C9'></div>
+					<div class='sk-asset sk-Oval-B78C5D38-B5CA-412B-B6DC-0CFF51A80C5C'></div>
+				</div>
+				<div class='sk-asset sk-Group-FE10A236-F1F0-4365-BA01-82F72BE89441'>
+					<div class='sk-asset sk-Oval-C5FCB631-90EE-48D8-AB3A-ED75527813B4'></div>
+					<div class='sk-asset sk-Oval-2EC32527-8275-4786-B0F7-91E883CF344E'></div>
+				</div>
+				<div class='sk-asset sk-Group-E4897B2E-D663-4413-B470-132E16FDAD7B'>
+					<div class='sk-asset sk-Oval-B86A7E47-706A-47D1-8EA0-7931EAF8D16B'></div>
+					<div class='sk-asset sk-Oval-B4048607-1CF9-4658-AEBB-FE959AA69031'></div>
+				</div>
+				<div class='sk-asset sk-Group-CAB4197C-75BC-4F97-9990-FD08531CA832'>
+					<div class='sk-asset sk-Oval-5A058809-1BE1-4B2D-A787-9C78925B47C0'></div>
+					<div class='sk-asset sk-Oval-27D37274-7B70-4ED6-AE50-F417C139A12A'></div>
+				</div>
+				<div class='sk-asset sk-Group-66EDF8AC-3C1F-4347-8351-1B95A17B8CA5'>
+					<div class='sk-asset sk-Oval-2076BAB9-D9C8-46E3-B7E3-4E341EE5C30E'></div>
+					<div class='sk-asset sk-Oval-C185FC5D-9BC8-484E-9FD2-85B65B6A5779'></div>
+				</div>
+				<div class='sk-asset sk-Group-79B4035F-F09E-41E6-B199-8C783D014E98'>
+					<div class='sk-asset sk-Oval-1AF340A6-70AD-4884-B27F-83D9BBCB3B7C'></div>
+					<div class='sk-asset sk-Oval-79555D65-8339-4049-9AAF-E805B7683385'></div>
+				</div>
+				<div class='sk-asset sk-Group-3399DC8B-132F-408D-A209-69E35AF18B6E'>
+					<div class='sk-asset sk-Oval-01C8F844-3618-4388-9C03-591EB3BE05EE'></div>
+					<div class='sk-asset sk-Oval-0D7B26DE-3D82-4705-BDCE-59E585005B06'></div>
+				</div>
+				<div class='sk-asset sk-Group-6FB34FDB-3124-49C5-972D-9041736D07B5'>
+					<div class='sk-asset sk-Oval-ADDA3847-D14B-4200-BE27-8080065C3581'></div>
+					<div class='sk-asset sk-Oval-56C5FCC7-8BC0-4EA8-8469-0FA731A91527'></div>
+				</div>
+				<div class='sk-asset sk-Group-09BE6EFC-984E-4F60-AFBC-F17B209737F9'>
+					<div class='sk-asset sk-Oval-A4ADF8DD-685D-4F81-83B3-EA93819F7D9F'></div>
+					<div class='sk-asset sk-Oval-AC516DC1-06E4-430B-9E73-E4A3ABEAFBFC'></div>
+				</div>
+				<div class='sk-asset sk-Group-BBAD5260-86BC-4C30-A122-3C0FBDD9B1D2'>
+					<div class='sk-asset sk-Oval-42B6391E-C9B2-49C2-9843-54825A931AAC'></div>
+					<div class='sk-asset sk-Oval-6C64737C-B03A-4742-AAF3-78BB551FE1BE'></div>
+				</div>
+				<div class='sk-asset sk-Group-151AAF52-260D-487A-8DA1-6F5A091E521D'>
+					<div class='sk-asset sk-Oval-4C083E8D-718D-4B64-818F-ADE2255A5394'></div>
+					<div class='sk-asset sk-Oval-C328EFD8-007C-4587-B4FB-8CDE40AA77A0'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-12F1BD05-8DBC-41E3-B2BF-D442E1E33491'>
+				<div class='sk-asset sk-Group-366843CF-52ED-4408-A2E0-802B4057AEB9'>
+					<div class='sk-asset sk-Oval-E79D97BB-BE05-46F5-81FF-793BDA678BC0'></div>
+					<div class='sk-asset sk-Oval-1626A0DA-85B2-480C-919C-D5CC43BD148E'></div>
+				</div>
+				<div class='sk-asset sk-Group-FA5E6255-22D6-43FD-97C5-7DCF25CDE32D'>
+					<div class='sk-asset sk-Oval-9F445239-0640-4B7B-96C0-72B4887A46E6'></div>
+					<div class='sk-asset sk-Oval-FA179174-C5E2-4388-824C-5F88818DB3A7'></div>
+				</div>
+				<div class='sk-asset sk-Group-C6763255-02AD-4CDF-83FB-CC36039F0475'>
+					<div class='sk-asset sk-Oval-B15F7C5B-A45A-494F-AFCE-486114B0D68A'></div>
+					<div class='sk-asset sk-Oval-50484095-E21D-4328-B094-EA613ECD4321'></div>
+				</div>
+				<div class='sk-asset sk-Group-AD1EA5CB-3D9C-4665-85FE-436038689A57'>
+					<div class='sk-asset sk-Oval-E79B1C99-9A2C-4795-BC2D-C7FB410E5289'></div>
+					<div class='sk-asset sk-Oval-E60AAF8F-0F94-42E5-A413-63DF110B5228'></div>
+				</div>
+				<div class='sk-asset sk-Group-71C38369-1E81-4483-A80F-E39AE4C8A5B1'>
+					<div class='sk-asset sk-Oval-3D8E28E2-BD8A-48C3-B243-2EEFF757F934'></div>
+					<div class='sk-asset sk-Oval-C8F77B0A-187F-4491-B3DC-4758290CA0DB'></div>
+				</div>
+				<div class='sk-asset sk-Group-4056A3F3-5A5A-47BD-9D06-9948D36B3560'>
+					<div class='sk-asset sk-Oval-75B80DA1-CE64-4C3F-A747-F0C8778DA790'></div>
+					<div class='sk-asset sk-Oval-82EF50A2-7118-4FEF-92DB-83FA710CB9F3'></div>
+				</div>
+				<div class='sk-asset sk-Group-32B7FAFE-88DD-41B6-8895-4B49371672D3'>
+					<div class='sk-asset sk-Oval-21F9BFF2-B11F-4334-B617-4F7A0D0F4A18'></div>
+					<div class='sk-asset sk-Oval-5846D963-0B70-4345-9FBB-49AFC765B9A0'></div>
+				</div>
+				<div class='sk-asset sk-Group-BCDCC99A-EB02-463E-AA74-776AAA218C3B'>
+					<div class='sk-asset sk-Oval-2FF32EA6-EC0F-4E08-B991-93C33BEE0DB5'></div>
+					<div class='sk-asset sk-Oval-121FF5BA-C4AB-4FCC-A4A0-CB4EE0F34D91'></div>
+				</div>
+				<div class='sk-asset sk-Group-750C869E-6BAE-4B27-9431-88DEFC69A140'>
+					<div class='sk-asset sk-Oval-CB1FC805-6BE2-40CC-865D-29A3F1BEE083'></div>
+					<div class='sk-asset sk-Oval-F3E17D3C-A40B-4E16-99D5-29F41CB3851E'></div>
+				</div>
+				<div class='sk-asset sk-Group-3BFCC1EC-26D9-4757-8E3E-89F8F3E64317'>
+					<div class='sk-asset sk-Oval-7F60B044-63CB-490F-B53E-0E075DCD2567'></div>
+					<div class='sk-asset sk-Oval-B8FD63A8-6296-441D-9E00-9EDB30245440'></div>
+				</div>
+				<div class='sk-asset sk-Group-A44E511C-6DFB-490D-BE80-B9CA955C1C5A'>
+					<div class='sk-asset sk-Oval-9772428A-B471-41B6-ABD6-D25E017921EA'></div>
+					<div class='sk-asset sk-Oval-9C1FBBE2-CAFD-412E-8865-FDCEAF4D1020'></div>
+				</div>
+				<div class='sk-asset sk-Group-D491AAB8-FDDD-4B24-9A35-3FB4F1D9F022'>
+					<div class='sk-asset sk-Oval-B0B8DCFE-4F30-478D-A5CF-F0F0F1C875F4'></div>
+					<div class='sk-asset sk-Oval-B39F0477-2ACF-4449-BF52-4B4E276C5BCA'></div>
+				</div>
+				<div class='sk-asset sk-Group-FBA6778A-EE0B-4B24-A2F1-AFF388697A19'>
+					<div class='sk-asset sk-Oval-84FAAEF7-724E-4BC3-8AB2-D85F5FFBE8C6'></div>
+					<div class='sk-asset sk-Oval-4C3B34FF-8DCF-4477-B840-4FEA69FB339C'></div>
+				</div>
+				<div class='sk-asset sk-Group-2D423993-1664-41D7-80E0-F7A87DADD2F7'>
+					<div class='sk-asset sk-Oval-180A7260-CB9F-4121-9CE9-2504E55CEEEC'></div>
+					<div class='sk-asset sk-Oval-D348CDEA-ED83-454A-AF2C-C555A04C2E9E'></div>
+				</div>
+				<div class='sk-asset sk-Group-13282BFD-5CDF-4985-837D-F5A99C348356'>
+					<div class='sk-asset sk-Oval-BA200093-4F49-4445-8CBA-394E00B77C07'></div>
+					<div class='sk-asset sk-Oval-7A115758-C9BC-4B51-9CC3-B8014039F491'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-B784CEA6-8171-4C5E-8D2B-25B0981B86F8'>
+				<div class='sk-asset sk-Group-118F501B-2C8D-4D6D-AE9B-C3051AF85A81'>
+					<div class='sk-asset sk-Oval-14B826E0-7C11-4288-8FED-29270EE0BE50'></div>
+					<div class='sk-asset sk-Oval-91590CB1-1C4F-416B-BF70-0ADA5C271E39'></div>
+				</div>
+				<div class='sk-asset sk-Group-C8B551D1-8959-40EB-A72B-26239359AEF6'>
+					<div class='sk-asset sk-Oval-E0B43515-3CE0-40A5-A01B-B50BA8EA5FA3'></div>
+					<div class='sk-asset sk-Oval-0560206F-54FF-4383-84C1-6BF8187FCBD7'></div>
+				</div>
+				<div class='sk-asset sk-Group-B86DDB14-90AE-45D1-B7D0-DFBBF172E56E'>
+					<div class='sk-asset sk-Oval-671671FB-CA32-46AD-9C97-06F38121DFBF'></div>
+					<div class='sk-asset sk-Oval-58AF93F0-6840-43F7-9C9F-119A36E8BB1E'></div>
+				</div>
+				<div class='sk-asset sk-Group-1EB02CB1-1B00-4A9F-99B5-44CFC915C5B0'>
+					<div class='sk-asset sk-Oval-81891A1C-CA0C-4D02-B02D-1FAE736686A8'></div>
+					<div class='sk-asset sk-Oval-7E6FED1A-37DC-4690-A1E0-65972EA4FAA4'></div>
+				</div>
+				<div class='sk-asset sk-Group-5518F6C7-928D-4A4F-95CF-D826B511F3C8'>
+					<div class='sk-asset sk-Oval-2BC88BB2-58D8-45EF-BC95-DE684AF72395'></div>
+					<div class='sk-asset sk-Oval-A78EDA57-BCBC-4FC0-B82D-31621267EE1E'></div>
+				</div>
+				<div class='sk-asset sk-Group-874D1C33-A060-4748-95B1-EC01DEE0FCAF'>
+					<div class='sk-asset sk-Oval-417C0C4A-9D78-45B4-8851-7D9059E645EE'></div>
+					<div class='sk-asset sk-Oval-85D936B8-998C-4AA6-A96D-5F23D84950B1'></div>
+				</div>
+				<div class='sk-asset sk-Group-3C82C41D-2437-4C13-80A7-4F4F0161F269'>
+					<div class='sk-asset sk-Oval-0BD6CEEF-E0E9-4805-9E00-FDACE312E476'></div>
+					<div class='sk-asset sk-Oval-C08D8ACF-E04E-434F-9098-D4BE2D9F2245'></div>
+				</div>
+				<div class='sk-asset sk-Group-3CC52C8E-0A00-4B84-BFC4-F51AB3BF5067'>
+					<div class='sk-asset sk-Oval-B03E3453-53D6-43D3-9A6F-CD26B691A3B2'></div>
+					<div class='sk-asset sk-Oval-D2A94437-F3E9-4387-B704-1059DF597826'></div>
+				</div>
+				<div class='sk-asset sk-Group-18B243CC-8343-466F-8864-887B74DFA290'>
+					<div class='sk-asset sk-Oval-F3DF06CD-C55D-4F21-B559-B43E98A3A08A'></div>
+					<div class='sk-asset sk-Oval-119E255C-66D6-422B-B335-CDB50DE2C613'></div>
+				</div>
+				<div class='sk-asset sk-Group-746EC118-2BF2-484E-AA87-96B700769858'>
+					<div class='sk-asset sk-Oval-58F092F7-C3B3-4678-9F9F-F9CAA300F278'></div>
+					<div class='sk-asset sk-Oval-B6AD90B8-E5CD-4082-A845-E0E1A2734502'></div>
+				</div>
+				<div class='sk-asset sk-Group-E928C6A7-5344-418A-86FB-9EF8192BF881'>
+					<div class='sk-asset sk-Oval-808B370A-8198-4A4C-9B11-B811B2294905'></div>
+					<div class='sk-asset sk-Oval-F957FA8C-5D9E-476F-8958-6D8AD5D7C53E'></div>
+				</div>
+				<div class='sk-asset sk-Group-764C5440-BBC0-487E-8349-59DF65A5AB76'>
+					<div class='sk-asset sk-Oval-CC1DF097-5B43-4A67-8919-546E7C18E798'></div>
+					<div class='sk-asset sk-Oval-93C43DE4-875F-4252-BE01-F5B0A820567F'></div>
+				</div>
+				<div class='sk-asset sk-Group-4C971FE9-7011-47C4-9637-B64DEE864B0C'>
+					<div class='sk-asset sk-Oval-B900D3CB-15EE-4E06-86D6-4C085AA9A277'></div>
+					<div class='sk-asset sk-Oval-D23B5DB3-56F3-48C7-9D90-8863B5BF769E'></div>
+				</div>
+				<div class='sk-asset sk-Group-F2CFFC58-85FD-4712-92E3-22F2511BD150'>
+					<div class='sk-asset sk-Oval-D5149E74-3096-40CF-B1C5-E81F9ACFA94F'></div>
+					<div class='sk-asset sk-Oval-B897C90B-0D66-40CE-A4BC-E03CA64DAB84'></div>
+				</div>
+				<div class='sk-asset sk-Group-2827DA6A-05A1-47B6-B4EA-4B31B9B2A948'>
+					<div class='sk-asset sk-Oval-DC4E0FD9-051E-4A18-98E2-706969547855'></div>
+					<div class='sk-asset sk-Oval-AF4678AC-D457-4CD3-AFC8-E091E91A3AF0'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-A0AFE346-A5E2-4CD3-BAF3-546E2EF8DA8C'>
+				<div class='sk-asset sk-Group-011A278A-2EE8-4510-BF78-8C211A3CD645'>
+					<div class='sk-asset sk-Oval-B5886076-DD11-4C04-9FF5-D4299E6520C7'></div>
+					<div class='sk-asset sk-Oval-6633D2A2-1F79-46CA-8551-F5FAEF355985'></div>
+				</div>
+				<div class='sk-asset sk-Group-CD655CF3-6B17-41FF-AD12-37F078F4F520'>
+					<div class='sk-asset sk-Oval-E7066E05-9B5F-43B8-A85D-7F8B6EA4EF8C'></div>
+					<div class='sk-asset sk-Oval-1144E6F0-1A60-4758-AF78-ADAAC75D912E'></div>
+				</div>
+				<div class='sk-asset sk-Group-724E9E4C-CAB2-4DD1-9279-F4A7567E46A8'>
+					<div class='sk-asset sk-Oval-6BBF35BA-2B8B-4D22-B386-F977911F0214'></div>
+					<div class='sk-asset sk-Oval-B6A588ED-C255-4265-AC41-8B0F2A551000'></div>
+				</div>
+				<div class='sk-asset sk-Group-86446DF7-BEA3-4B38-A303-5F75CA66F15F'>
+					<div class='sk-asset sk-Oval-3003FF25-7B6E-4196-9E09-86DD9B432DF1'></div>
+					<div class='sk-asset sk-Oval-D662675A-061C-41D2-B831-6949B8788B71'></div>
+				</div>
+				<div class='sk-asset sk-Group-CC652043-56F9-4F67-B91C-953DD15CD082'>
+					<div class='sk-asset sk-Oval-D0B406F2-EC66-46BE-986D-FF0AD44B47A0'></div>
+					<div class='sk-asset sk-Oval-BBF7D61F-CC56-4D5F-9E54-A5D3CAA27D05'></div>
+				</div>
+				<div class='sk-asset sk-Group-B357F210-73C5-4ADC-A489-F7AB52A919BC'>
+					<div class='sk-asset sk-Oval-3A95C9C7-B046-4601-BAC5-1E56E38049C1'></div>
+					<div class='sk-asset sk-Oval-69FE1CB1-63B8-4638-A7FC-EBEFE4B0C91C'></div>
+				</div>
+				<div class='sk-asset sk-Group-2B6EFEB0-54B4-44DD-84FF-D20239CEFB0A'>
+					<div class='sk-asset sk-Oval-8D9992BF-E6B8-4EAF-8576-4D81E6195687'></div>
+					<div class='sk-asset sk-Oval-2E3A25D4-5154-402A-A1FD-8D4340D2FC01'></div>
+				</div>
+				<div class='sk-asset sk-Group-B2A799D6-6D0C-42AA-BCFD-6D52CEE4A15C'>
+					<div class='sk-asset sk-Oval-514D60E7-341C-4C8B-AE6E-A970B04E4E29'></div>
+					<div class='sk-asset sk-Oval-6B792754-B111-4C25-B746-2EFC4DA5C5DD'></div>
+				</div>
+				<div class='sk-asset sk-Group-61D7C285-DC75-4652-88A8-108330256062'>
+					<div class='sk-asset sk-Oval-0AACAD0F-95AD-4F95-82F5-0D0EC269D4BC'></div>
+					<div class='sk-asset sk-Oval-A966DF15-67E6-4D20-96E3-72A11D4F2030'></div>
+				</div>
+				<div class='sk-asset sk-Group-30FBC1BB-1056-4FC4-A510-8159BC1CB5BA'>
+					<div class='sk-asset sk-Oval-A5495847-0502-49B9-B80B-1D4AD6427D6F'></div>
+					<div class='sk-asset sk-Oval-EDF9026F-3C79-415D-8CFC-26A1953F4CBD'></div>
+				</div>
+				<div class='sk-asset sk-Group-A7677A12-8A27-411D-AE65-89E6921720B3'>
+					<div class='sk-asset sk-Oval-32F178DF-0E79-4608-8138-DCCBC10D2249'></div>
+					<div class='sk-asset sk-Oval-D236B23F-578C-45B3-B0FF-5B522A7ED402'></div>
+				</div>
+				<div class='sk-asset sk-Group-CAAA1EC2-4B33-41C1-A64D-CD7FA7AF96E7'>
+					<div class='sk-asset sk-Oval-3335AB5A-83FF-4780-8B27-0902A75A8DFE'></div>
+					<div class='sk-asset sk-Oval-85F461B7-4702-49DF-9E56-2E50A375701D'></div>
+				</div>
+				<div class='sk-asset sk-Group-42F052B1-43FB-4723-8878-7B6B7CE05E06'>
+					<div class='sk-asset sk-Oval-8F9C369D-2E16-43A4-8978-055A42FEA522'></div>
+					<div class='sk-asset sk-Oval-A6BABFF3-D91F-4FAD-BE86-E08FA6F3F881'></div>
+				</div>
+				<div class='sk-asset sk-Group-12A58396-D2DC-4ABC-A4D5-2E688C311FFF'>
+					<div class='sk-asset sk-Oval-76AC1450-6A54-4649-B24A-4DD548669FA6'></div>
+					<div class='sk-asset sk-Oval-984BB339-A3CA-4D7F-A980-B313FAF13818'></div>
+				</div>
+				<div class='sk-asset sk-Group-AEC8EE08-E224-45F7-8A2A-9F15FDC69DD4'>
+					<div class='sk-asset sk-Oval-3913440A-FC58-4441-8384-C672117E5869'></div>
+					<div class='sk-asset sk-Oval-D70D1C57-7DD9-4120-9F11-4D780B8D2A50'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-D390B570-DE47-4042-8C48-ADC20BFA981A'>
+				<div class='sk-asset sk-Group-C3521345-37F0-491A-BA83-C1753D3F9ECB'>
+					<div class='sk-asset sk-Oval-E53E3371-4F84-4F31-82B3-22B749E22F2E'></div>
+					<div class='sk-asset sk-Oval-F7CF2577-C209-414A-BD3B-47FABA022E00'></div>
+				</div>
+				<div class='sk-asset sk-Group-17054607-1BE7-43AD-92EC-62A3A214F045'>
+					<div class='sk-asset sk-Oval-879A53F1-26A6-4009-A440-7A0FF4865251'></div>
+					<div class='sk-asset sk-Oval-4087CAFF-B9E7-4382-ABE2-AD6DB167F4E2'></div>
+				</div>
+				<div class='sk-asset sk-Group-DD828211-2FF0-4F7E-BC1E-882A71E530C7'>
+					<div class='sk-asset sk-Oval-6B032985-6164-4A35-AC80-7956F2AEC456'></div>
+					<div class='sk-asset sk-Oval-D00B7669-E91E-4773-96CB-9CE02AA2BCDB'></div>
+				</div>
+				<div class='sk-asset sk-Group-5D640C10-901B-4B01-9D96-0FA01B9052AA'>
+					<div class='sk-asset sk-Oval-82E19728-80C4-4EC1-801D-B60DDAA36FCE'></div>
+					<div class='sk-asset sk-Oval-E5F1E2B5-BF6B-42D7-8ECB-FAE845572D3D'></div>
+				</div>
+				<div class='sk-asset sk-Group-1576DC7B-46EE-46EC-820B-485B9A8F9916'>
+					<div class='sk-asset sk-Oval-35332DC7-565B-4A84-99C8-0C1038E28578'></div>
+					<div class='sk-asset sk-Oval-FBB629E1-34BC-4A9D-A9B4-1BCF077FACE7'></div>
+				</div>
+				<div class='sk-asset sk-Group-EFE8B41E-151D-4576-8B87-B2D1ABEA8FFB'>
+					<div class='sk-asset sk-Oval-656A1AA0-968B-41E9-AEB1-10ED7308BC5E'></div>
+					<div class='sk-asset sk-Oval-7BF29413-1075-4A59-95FC-69664B84D981'></div>
+				</div>
+				<div class='sk-asset sk-Group-85C47A5F-759E-4D5B-B2EF-77CC24BE2568'>
+					<div class='sk-asset sk-Oval-E883E78A-AC61-4E9B-A914-495B5415AA23'></div>
+					<div class='sk-asset sk-Oval-6FCF059E-4038-49AD-A42A-0BD73DF1EEE4'></div>
+				</div>
+				<div class='sk-asset sk-Group-D06F7D36-61D8-4259-888A-77A5DC6B4D4B'>
+					<div class='sk-asset sk-Oval-CCCA710E-9EB5-42F8-99E9-65253B346550'></div>
+					<div class='sk-asset sk-Oval-C63EE667-5C16-41D7-B080-A389BF94614B'></div>
+				</div>
+				<div class='sk-asset sk-Group-C5473ABE-8A06-419B-AB8B-CD7B0316C11F'>
+					<div class='sk-asset sk-Oval-EE6133F8-6F7A-4345-886D-387D13D0CC20'></div>
+					<div class='sk-asset sk-Oval-48F5A70B-E4AC-4995-B5CE-91B2AD5E4353'></div>
+				</div>
+				<div class='sk-asset sk-Group-1CCAEA61-8BB5-44C5-8970-40429645BBA7'>
+					<div class='sk-asset sk-Oval-731EE5D1-30A7-4BDF-B383-F5CEF9CECBB8'></div>
+					<div class='sk-asset sk-Oval-8E96F19E-2214-49C4-8A9B-B3CE2B3178F2'></div>
+				</div>
+				<div class='sk-asset sk-Group-1809F903-4D94-4016-8857-A73ECB4D4833'>
+					<div class='sk-asset sk-Oval-3B0EA033-75D6-472F-B8DC-8EA63AB170F0'></div>
+					<div class='sk-asset sk-Oval-DC7122A0-D867-4F21-8010-8B8CF6A449C1'></div>
+				</div>
+				<div class='sk-asset sk-Group-EA2CBB9E-FA57-45C9-82D2-7F266A4B2067'>
+					<div class='sk-asset sk-Oval-724B2576-A77B-4B0F-A89B-EFE00BCF173F'></div>
+					<div class='sk-asset sk-Oval-94F91D92-3923-42ED-9913-13E3D1988658'></div>
+				</div>
+				<div class='sk-asset sk-Group-817956BA-F8F1-4B17-BCB9-A69D1736AF75'>
+					<div class='sk-asset sk-Oval-70313055-CEAC-4137-B439-F819245B6190'></div>
+					<div class='sk-asset sk-Oval-B169FF6B-2525-4EAC-B7D7-BAC9B511EE21'></div>
+				</div>
+				<div class='sk-asset sk-Group-D2436992-6575-4265-B3D4-FA10259ADABA'>
+					<div class='sk-asset sk-Oval-017A40C0-2279-4E88-A90F-76C8F6098076'></div>
+					<div class='sk-asset sk-Oval-C70C35DA-123C-4160-8D35-CA11A6ECBEAC'></div>
+				</div>
+				<div class='sk-asset sk-Group-0F152177-9830-432C-8DBB-8BC34676F8A9'>
+					<div class='sk-asset sk-Oval-59FD8B54-B085-4821-A3F0-24F969E3ED93'></div>
+					<div class='sk-asset sk-Oval-DCE5AA08-7EC4-47D9-899A-A14D47413E4C'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-B70E14C2-8854-4F41-A79A-6FCC00ECD501'>
+				<div class='sk-asset sk-Group-F3D66F47-ACAC-43CF-9ED5-DFE653AC0F4E'>
+					<div class='sk-asset sk-Oval-A0FAF0DD-E802-4336-9775-714E61B9D3E6'></div>
+					<div class='sk-asset sk-Oval-143BD67A-94BA-4269-826D-B42D5E0B687A'></div>
+				</div>
+				<div class='sk-asset sk-Group-7418CFC3-2A91-4F11-BCC6-969A83D7F56F'>
+					<div class='sk-asset sk-Oval-B4886FD6-1505-41F4-A6CD-C224CC7D3C4A'></div>
+					<div class='sk-asset sk-Oval-4E444244-FBC5-482F-B38C-9101B46379D1'></div>
+				</div>
+				<div class='sk-asset sk-Group-511CB1AC-2379-4736-856D-4796335017E8'>
+					<div class='sk-asset sk-Oval-FA6C1807-2A75-4B66-8367-420ACC4C8E36'></div>
+					<div class='sk-asset sk-Oval-61050965-8BBB-4ACE-A886-6163153EBA81'></div>
+				</div>
+				<div class='sk-asset sk-Group-9C8E4563-4F5D-4E92-A8D0-36FA83D3B11E'>
+					<div class='sk-asset sk-Oval-401FD358-0DDA-4750-B8F9-93A778AFF05F'></div>
+					<div class='sk-asset sk-Oval-A9BE2150-D3AD-4985-BB0C-E104A2F1A836'></div>
+				</div>
+				<div class='sk-asset sk-Group-1D00714E-1D44-4C91-9EC8-42BFA99F63FE'>
+					<div class='sk-asset sk-Oval-0E8E29B3-C1B3-4F18-8503-8F5B279747C9'></div>
+					<div class='sk-asset sk-Oval-CF525FDF-07BA-417F-B2AB-95DBBE140D6E'></div>
+				</div>
+				<div class='sk-asset sk-Group-1E13B868-DB79-4980-B092-6F3BF5E1212B'>
+					<div class='sk-asset sk-Oval-99C6E09D-2A3F-4A0D-83A9-BC5C34DA525B'></div>
+					<div class='sk-asset sk-Oval-74ECA14C-C033-45EE-AFBD-3C17CAD26324'></div>
+				</div>
+				<div class='sk-asset sk-Group-60545763-54C1-436B-A49E-D67D0DFE9B7D'>
+					<div class='sk-asset sk-Oval-1C6990FB-9BBC-496A-B8AA-C59CC1D363BB'></div>
+					<div class='sk-asset sk-Oval-1E28E3DA-6CF8-4EF1-9AD7-32F0FC11BC9A'></div>
+				</div>
+				<div class='sk-asset sk-Group-95E02D50-E80E-469B-AF37-5F1FE3FA5CB3'>
+					<div class='sk-asset sk-Oval-C987940A-CFA1-4C29-9E0B-5E9638C28253'></div>
+					<div class='sk-asset sk-Oval-9A1AB24D-C858-4928-A5BE-548B3CB648B1'></div>
+				</div>
+				<div class='sk-asset sk-Group-9A838C06-6304-4C2F-AE85-1A17D1339DBD'>
+					<div class='sk-asset sk-Oval-3A578597-614E-4286-AE21-2B5B9394507D'></div>
+					<div class='sk-asset sk-Oval-AC1C63B6-6E7B-46B5-BBE3-4FFAC74EFFF4'></div>
+				</div>
+				<div class='sk-asset sk-Group-9EC55169-8FBF-46DC-BDD7-5FA84B247F81'>
+					<div class='sk-asset sk-Oval-95C2F8DD-D552-46EA-9B3A-A36693A398C3'></div>
+					<div class='sk-asset sk-Oval-263B9D14-676E-4D74-8889-85B785AE2E03'></div>
+				</div>
+				<div class='sk-asset sk-Group-10ACF8C4-B6E4-4A82-8975-CD22E4F57EDA'>
+					<div class='sk-asset sk-Oval-AD9F374D-B063-40C8-840D-0CB5DD852A52'></div>
+					<div class='sk-asset sk-Oval-B1FDF65A-A08B-4150-BF02-26E223B4C4C2'></div>
+				</div>
+				<div class='sk-asset sk-Group-5912DD8B-9645-4669-994A-58C0DFDB3915'>
+					<div class='sk-asset sk-Oval-D2E7E078-65E8-4D15-856B-C1304DDD2189'></div>
+					<div class='sk-asset sk-Oval-4BB090FE-4948-407E-881E-FD9E1922713B'></div>
+				</div>
+				<div class='sk-asset sk-Group-49A6C5C4-6C29-4CB9-80D2-98D4A8AFAC5C'>
+					<div class='sk-asset sk-Oval-6E915E1B-E381-4E71-AF18-3C6A54E87B97'></div>
+					<div class='sk-asset sk-Oval-FEF303C6-804D-403D-9B44-AAB11A56D2E3'></div>
+				</div>
+				<div class='sk-asset sk-Group-90C70549-C8B0-40B4-AC85-C1DE52F81192'>
+					<div class='sk-asset sk-Oval-C43FD143-2CE7-4D21-8866-18D6AE11CACC'></div>
+					<div class='sk-asset sk-Oval-835D0045-8623-4E60-A985-7FF31A025CCD'></div>
+				</div>
+				<div class='sk-asset sk-Group-9B9C0D1A-BEEF-4E1C-B585-717A2E1F2562'>
+					<div class='sk-asset sk-Oval-C32F0E58-161F-4C74-AB2E-8FA715873202'></div>
+					<div class='sk-asset sk-Oval-C2864567-4A5E-4EB7-9F09-107DEF40528A'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-EF31F782-DCA9-4429-9265-76E0D8CC3634'>
+				<div class='sk-asset sk-Group-868CD761-6066-42D2-811E-C43E983870FF'>
+					<div class='sk-asset sk-Oval-86107643-A850-4EC1-A9DB-280C8250B549'></div>
+					<div class='sk-asset sk-Oval-891E8764-0ACD-4138-B50B-B194CAFD72C0'></div>
+				</div>
+				<div class='sk-asset sk-Group-3870AFEF-B194-4B96-A660-40DED2A2068C'>
+					<div class='sk-asset sk-Oval-380E74B5-6703-4F3F-B29B-3577B58795BA'></div>
+					<div class='sk-asset sk-Oval-9144DF61-885B-4C6A-AEAA-708AD0F929CF'></div>
+				</div>
+				<div class='sk-asset sk-Group-74D354A3-BD04-444B-8A69-B66AB702F3EC'>
+					<div class='sk-asset sk-Oval-8BE89140-4166-46AE-9337-823779BD70BC'></div>
+					<div class='sk-asset sk-Oval-81FABC5D-9893-44F1-828D-38FA7D8DD719'></div>
+				</div>
+				<div class='sk-asset sk-Group-8ACEED94-1185-45B9-8DBC-CDE9B8F53A1F'>
+					<div class='sk-asset sk-Oval-05205E42-9E69-4280-904C-608A0C8DAB2D'></div>
+					<div class='sk-asset sk-Oval-E5D6FC7F-34AC-4C89-85B4-640069767518'></div>
+				</div>
+				<div class='sk-asset sk-Group-CEC829CE-8106-432D-8987-474C5A10C49C'>
+					<div class='sk-asset sk-Oval-D3982E45-428A-4F24-90F7-18742AE4B831'></div>
+					<div class='sk-asset sk-Oval-64D0B026-D484-476A-A814-3546425B948C'></div>
+				</div>
+				<div class='sk-asset sk-Group-568F1308-3701-441C-91D4-632631A4402C'>
+					<div class='sk-asset sk-Oval-300F2501-C86A-49E0-989F-58E6D5747F96'></div>
+					<div class='sk-asset sk-Oval-EA8C39D6-1B7E-4DBF-A04A-0C78EA263F78'></div>
+				</div>
+				<div class='sk-asset sk-Group-2AE21ECC-30E9-4DD0-A9CC-614CF256F17B'>
+					<div class='sk-asset sk-Oval-F25A05A8-FE4B-46A5-91F6-ED9D506D9FFB'></div>
+					<div class='sk-asset sk-Oval-1F35EC51-325C-4340-82F4-E2A66AF8A0AF'></div>
+				</div>
+				<div class='sk-asset sk-Group-6D1EC0F6-F7A8-4FBE-A3A4-7A84EE51AE37'>
+					<div class='sk-asset sk-Oval-913E633B-5F15-4010-A889-190A98C36F6D'></div>
+					<div class='sk-asset sk-Oval-8C111780-BF4E-4BA3-A02F-D98D75A4E989'></div>
+				</div>
+				<div class='sk-asset sk-Group-577ED524-32D6-4576-A723-7983AA3D10E6'>
+					<div class='sk-asset sk-Oval-8C8B4C0F-4811-4155-9E19-0ADBD76EA451'></div>
+					<div class='sk-asset sk-Oval-9B3B59FA-5541-441F-B081-1EF25CD29927'></div>
+				</div>
+				<div class='sk-asset sk-Group-B6C59574-FA8B-46D5-A3F1-C0B8ACB6A554'>
+					<div class='sk-asset sk-Oval-1105B719-B880-4532-8229-A012367CEBD5'></div>
+					<div class='sk-asset sk-Oval-1399A286-CE00-4F18-8D62-1861755E6014'></div>
+				</div>
+				<div class='sk-asset sk-Group-DDA4FFE8-2CB8-445C-8F2B-904D93B0EAC2'>
+					<div class='sk-asset sk-Oval-8E69D6E1-C910-474A-8022-193FDF0CBC53'></div>
+					<div class='sk-asset sk-Oval-2D254F50-EBE9-4887-A87A-449AAD222056'></div>
+				</div>
+				<div class='sk-asset sk-Group-95B2305E-087F-42B0-B5C2-4611B80F5D97'>
+					<div class='sk-asset sk-Oval-876E2E6D-0EEC-4469-B406-FDAF426E1499'></div>
+					<div class='sk-asset sk-Oval-A871FE81-5EF5-414E-A6AA-64BF6CA265E1'></div>
+				</div>
+				<div class='sk-asset sk-Group-974E9606-E89E-4DF5-B355-104203FD97ED'>
+					<div class='sk-asset sk-Oval-546FEE79-306B-44F7-A10A-68D756A204E0'></div>
+					<div class='sk-asset sk-Oval-D0501C63-2900-4ED4-B192-A387405507A7'></div>
+				</div>
+				<div class='sk-asset sk-Group-6A4930B1-2393-415A-ADFD-EDEE111C7F52'>
+					<div class='sk-asset sk-Oval-43A4620D-6F94-40C3-BB1F-B98CE493643E'></div>
+					<div class='sk-asset sk-Oval-8EE3F7F9-B0D2-4B49-9E19-A73FD7CD942F'></div>
+				</div>
+				<div class='sk-asset sk-Group-9B76BE5F-3222-47E0-871C-C1C6255BAD2F'>
+					<div class='sk-asset sk-Oval-732BC05E-8DB5-4FBB-B89A-205D42EC25E6'></div>
+					<div class='sk-asset sk-Oval-E56C0775-2C9A-408B-B190-DB732A4AD784'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-09E7F054-9385-4E33-955B-C3390351D10A'>
+				<div class='sk-asset sk-Group-A4179A84-1155-40DA-A141-F1BE1879EE15'>
+					<div class='sk-asset sk-Oval-D201866D-515B-409F-A693-A7F31B2BA673'></div>
+					<div class='sk-asset sk-Oval-CED45870-D94E-4669-AAD6-53D219F4FC53'></div>
+				</div>
+				<div class='sk-asset sk-Group-71D5A835-8725-42AC-8211-4558D35DCD33'>
+					<div class='sk-asset sk-Oval-44771638-AAF9-4161-B148-2A561464007C'></div>
+					<div class='sk-asset sk-Oval-6FB12B79-68DC-4D4E-94C8-6A443CC48776'></div>
+				</div>
+				<div class='sk-asset sk-Group-6991FA0F-A76D-41F6-B031-FEA663112E47'>
+					<div class='sk-asset sk-Oval-687E9E8B-8B8A-483E-BFC9-DBCA38B8D7A0'></div>
+					<div class='sk-asset sk-Oval-CAD60ED9-173C-4B7F-B554-3B5479488E94'></div>
+				</div>
+				<div class='sk-asset sk-Group-317EFE36-63B2-471A-9BC8-8D2AF4D9EAD3'>
+					<div class='sk-asset sk-Oval-9FC02797-FA6B-4417-AFC1-79BFA78080F8'></div>
+					<div class='sk-asset sk-Oval-7736DAC2-952F-413D-BD8F-5C87AB0938E6'></div>
+				</div>
+				<div class='sk-asset sk-Group-6FB49C03-A793-4ECD-BF8E-583F3FC1493F'>
+					<div class='sk-asset sk-Oval-45CA5460-D20B-4A0C-808D-FE8FDAE2BAA8'></div>
+					<div class='sk-asset sk-Oval-3B36FC69-C353-4DE9-B3A4-EE61752C2D85'></div>
+				</div>
+				<div class='sk-asset sk-Group-9CBEBAFF-58BF-4F38-9888-405CFD04566D'>
+					<div class='sk-asset sk-Oval-8C62FE7A-54F6-4D3E-9D46-D1C986B65E4A'></div>
+					<div class='sk-asset sk-Oval-DC633DC2-71F0-4024-83F5-6A02092D6AD7'></div>
+				</div>
+				<div class='sk-asset sk-Group-85A21321-AC63-4E7B-A81A-8EDD3E128300'>
+					<div class='sk-asset sk-Oval-B7FA7E00-2630-4F1D-A6A8-FB5B2CA32203'></div>
+					<div class='sk-asset sk-Oval-CC82435D-9453-44BF-81FB-E241D3953E51'></div>
+				</div>
+				<div class='sk-asset sk-Group-68CFF5C0-2837-479F-8133-7567D4DA212C'>
+					<div class='sk-asset sk-Oval-E21E03BC-1717-4E4C-AAAC-A674E1C2186B'></div>
+					<div class='sk-asset sk-Oval-06589555-E512-4233-A132-45DE73EADE5C'></div>
+				</div>
+				<div class='sk-asset sk-Group-79D2BC2B-E153-4A00-918F-E9ABF102DECC'>
+					<div class='sk-asset sk-Oval-585286AD-9DD4-49D5-B5E9-27E0F67BB675'></div>
+					<div class='sk-asset sk-Oval-F82373C6-9F1A-4D0F-A411-9B3A8495AC88'></div>
+				</div>
+				<div class='sk-asset sk-Group-4C8A69E5-59D8-460E-ADAD-57C6EF2F09DD'>
+					<div class='sk-asset sk-Oval-07675D6A-7CBB-4F58-9D5E-C5F8689809EA'></div>
+					<div class='sk-asset sk-Oval-998513DF-9D30-435A-AF46-C0A8B96AAF8F'></div>
+				</div>
+				<div class='sk-asset sk-Group-F242F244-7FBA-4DD9-A8DD-8782130BC1B8'>
+					<div class='sk-asset sk-Oval-1D439A81-7F97-4F8A-915D-093E7B5930BB'></div>
+					<div class='sk-asset sk-Oval-E6C053E9-7FD3-4EA7-9B37-0E4361C588B3'></div>
+				</div>
+				<div class='sk-asset sk-Group-47161ECA-60A4-437E-9DE2-BDB7FAB7AC35'>
+					<div class='sk-asset sk-Oval-BD9C4CDC-3FA3-4396-81DF-1F48EFFD81A6'></div>
+					<div class='sk-asset sk-Oval-5F3CCACB-ACA3-445B-B588-74748034CF3D'></div>
+				</div>
+				<div class='sk-asset sk-Group-B0249ABB-950E-4551-A938-951CBA515812'>
+					<div class='sk-asset sk-Oval-5C648180-0A77-4A17-A01A-1D453D882B0C'></div>
+					<div class='sk-asset sk-Oval-23384884-BF17-4442-B804-46B4559F88FF'></div>
+				</div>
+				<div class='sk-asset sk-Group-CBD9D238-33E7-46A5-9614-16C21250A19E'>
+					<div class='sk-asset sk-Oval-731DA828-88E3-4105-BA0A-8DAFE9DBA32B'></div>
+					<div class='sk-asset sk-Oval-2AD5C9CA-35FC-4D57-BA14-A3ECD68A0D97'></div>
+				</div>
+				<div class='sk-asset sk-Group-1B17E008-B6A0-4B60-8B5D-E41F77E90360'>
+					<div class='sk-asset sk-Oval-E9D0C750-3C6B-4FF7-8FEA-3B31C0851AFD'></div>
+					<div class='sk-asset sk-Oval-ECAB0428-9BF8-4C59-81F7-4561F61B817A'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Group-2-95423E4E-29D3-496C-A14A-40B5BF36A440'>
+				<div class='sk-asset sk-Group-CDDB8B90-48DF-4DD4-BAA6-77C3B998CB35'>
+					<div class='sk-asset sk-Oval-776D1FDD-7C85-490B-BCAD-6A8531FE527F'></div>
+					<div class='sk-asset sk-Oval-B50FA624-3A91-4125-B63D-CBF6EA82673E'></div>
+				</div>
+				<div class='sk-asset sk-Group-486AE673-5130-4FB6-88BD-A4155426115E'>
+					<div class='sk-asset sk-Oval-106858D4-5110-4E6D-9DB3-AEF15BB74D06'></div>
+					<div class='sk-asset sk-Oval-233963FB-E935-48D0-BD50-D91DE92EC320'></div>
+				</div>
+				<div class='sk-asset sk-Group-D6F95519-E814-4758-B0FF-27BCAE1C12BB'>
+					<div class='sk-asset sk-Oval-3FD9D82D-909C-4535-A0EF-C157C40A8BE1'></div>
+					<div class='sk-asset sk-Oval-0FB6E633-BF0F-413A-9202-5EF92C7902CE'></div>
+				</div>
+				<div class='sk-asset sk-Group-9E154923-A675-4C5F-82F5-8A646F752DD6'>
+					<div class='sk-asset sk-Oval-E51E1F0D-94A6-4A3D-A229-C3E4B0942285'></div>
+					<div class='sk-asset sk-Oval-F8449840-1102-45DC-A952-4DE1590F55A7'></div>
+				</div>
+				<div class='sk-asset sk-Group-D67469AA-3EEC-4CDF-8535-01D4C5806782'>
+					<div class='sk-asset sk-Oval-AC8E60B3-C041-4FCF-A855-47F14394F61A'></div>
+					<div class='sk-asset sk-Oval-83BF0234-07BF-4D81-8AC1-E3D45E5D39AB'></div>
+				</div>
+				<div class='sk-asset sk-Group-4820B9DC-7497-42AD-8A0F-E338509D850E'>
+					<div class='sk-asset sk-Oval-61449F04-D391-4C90-A900-A59DDE03AE3B'></div>
+					<div class='sk-asset sk-Oval-54B92E26-1B4D-455F-99AA-D23CD45F0CA1'></div>
+				</div>
+				<div class='sk-asset sk-Group-0A79C2CE-1A37-4EB8-817B-8315EC2E56CA'>
+					<div class='sk-asset sk-Oval-258624DC-D986-430F-9E19-0B61E7A82CBC'></div>
+					<div class='sk-asset sk-Oval-653ED34A-A4A0-4248-A6CE-7AB64EE94F18'></div>
+				</div>
+				<div class='sk-asset sk-Group-861E7155-8F3E-47C6-8AAA-96577430986C'>
+					<div class='sk-asset sk-Oval-FDD6A972-7FB0-433E-8003-AD85763F8D8C'></div>
+					<div class='sk-asset sk-Oval-81FFC4C2-A748-474F-827F-259AF3B6E5AE'></div>
+				</div>
+				<div class='sk-asset sk-Group-08AEF8F4-8057-4AA5-B6C8-66FC8126145B'>
+					<div class='sk-asset sk-Oval-EB8F27AF-CAD0-45EA-82FA-D25C71860C2B'></div>
+					<div class='sk-asset sk-Oval-86AD2417-EF4F-4FB2-B743-3292F86E0B3B'></div>
+				</div>
+				<div class='sk-asset sk-Group-C1863DF7-D02A-47BB-B154-BB019A0702D3'>
+					<div class='sk-asset sk-Oval-68323BB1-7425-4D7E-AA6A-9C41212A5905'></div>
+					<div class='sk-asset sk-Oval-6083C194-F4B0-4D3B-B29A-E66670933FDC'></div>
+				</div>
+				<div class='sk-asset sk-Group-B36B6383-EB02-49D3-BB7C-5B91EADDBD7D'>
+					<div class='sk-asset sk-Oval-8DF50462-2F92-4035-A8BE-E829401AC0E7'></div>
+					<div class='sk-asset sk-Oval-353BE134-FA9D-4E12-94F3-F38C173590D5'></div>
+				</div>
+				<div class='sk-asset sk-Group-0A74AD81-494E-4647-B531-3639BA5C2A90'>
+					<div class='sk-asset sk-Oval-D7EFF3A9-1E85-47A9-AF82-D83292A3C35C'></div>
+					<div class='sk-asset sk-Oval-1478F140-C4C2-4970-A651-1CEA722C2EBF'></div>
+				</div>
+				<div class='sk-asset sk-Group-07C87318-F227-40CB-A4E8-B21ECD8FAC52'>
+					<div class='sk-asset sk-Oval-0575D8CD-DA2D-4D50-9285-9182B8227BAA'></div>
+					<div class='sk-asset sk-Oval-BB4DD58A-DA55-426D-84FE-D7A992295331'></div>
+				</div>
+				<div class='sk-asset sk-Group-5B1F7B0A-6F11-4D23-B7D5-6E16C3B3BF49'>
+					<div class='sk-asset sk-Oval-E4783221-2BC1-443D-BE04-78D9F67EE51C'></div>
+					<div class='sk-asset sk-Oval-E8C8D311-BD71-4BC8-8F1A-117C3EB5C351'></div>
+				</div>
+				<div class='sk-asset sk-Group-32675815-DC11-4B72-86ED-6D0BD6FC7478'>
+					<div class='sk-asset sk-Oval-C55EB0A8-65CD-49AE-A117-877C6E4F2DF5'></div>
+					<div class='sk-asset sk-Oval-C845DCA3-6890-4353-BE21-D35775D05621'></div>
+				</div>
+			</div>
+			<div class='sk-asset sk-Rectangle-424C1ED7-ACEE-4AA1-A82C-55053E73B94E'></div>
+			<div class='sk-asset sk-Group-E5390ED9-51D5-40CA-A3C0-85C7E9B63081'>
+				<div class='sk-asset sk-Oval-5BC06F7D-4805-466A-BD57-45A9E4DB7081'></div>
+				<div class='sk-asset sk-Oval-67986E08-E2FB-40D8-842E-AE35A53B587C'></div>
+			</div>
+			<div class='sk-asset sk-1984-8BB24654-3125-4F3F-A139-400C8FE8F5E4'><span class="span1">1984</span></div>
+			<div class='sk-asset sk-portfolio-443668A3-5E4A-4F90-B463-4809BC91A95E'><span class="span1">portfolio</span></div>
+			<div class='sk-asset sk-portfolio-by-Andrew-A181B254-CC00-437C-A842-2026E42321C7'><span class="span1">portfolio by</span><span class="span2"> Andrew Koumoudjian</span></div>
+			<div class='sk-asset sk-Novel-by-George-Orwe-B1A450B7-50BE-46D4-AAE2-69AC15B59B31'><span class="span1">Novel</span><span class="span2"> by George Orwell</span></div>
+			<div class='sk-asset sk-Hotspot-4F9D72BA-661C-406D-B096-629DDD159F38'></div>
+			<div class='sk-asset sk-Hotspot-EDC93387-431F-4A72-BD1F-CA99FE2B2775'></div>
+			<div class='sk-asset sk-Hotspot-2B0AD4C3-7B1B-473B-99E5-7909564BA999'></div>
+			<div class='sk-asset sk-Hotspot-DA86FA9D-8A35-48C8-89E5-0ACC4A225FD1'></div>
+	
+         <div>
 
-    .loading-progress {
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      transform-origin: 0% 50%;
-      background-color: #aaa;
-      transition: transform .2s ease-in-out;
-    }
+				<table style="position:absolute; bottom:110px; width:100%; border:4">
+					<tr>
+						<th><p><button  onclick="window.open('writing.html', '_Self');">  Songs  </button></p> </th>
+						<th><p><button onclick="window.open('character.html', '_Self');">Diary</button></p> </th>
+						<th><p><button onclick="window.open('vocabulary.html', '_Self');">Riddles</button></p> </th>
+						<th><p><button onclick="window.open('extension.html', '_Self');">Video</button></p> </th>
+					</tr>
 
-    @keyframes loading-element-enter {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    body.is-loading .loading-element {
-      display: block;
-    }
-
-    body.is-loading .prototype-container {
-      display: none;
-    }
-
-    .prototype-container {
-      position: fixed;
-      height: 100%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      overscroll-behavior: auto;
-    }
-
-    .prototype-container ::-webkit-scrollbar {
-      display: none;
-    }
-
-    .artboard {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      box-shadow: 0 0 0 1px rgba(0, 0, 0, .12);
-      overflow: hidden;
-    }
-
-    .artboard.is-active {
-      opacity: 1;
-      visibility: visible;
-      pointer-events: all;
-    }
-
-    .artboard-scroll-container,
-    .artboard-fixed-container {
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-    }
-
-    .artboard-fixed-container {
-      pointer-events: none;
-    }
-
-    .artboard-scroll-container {
-      overflow: scroll;
-    }
-
-    .artboard-content {
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-size: contain;
-      overflow: hidden; /* don't allow hotspots to create scrolling */
-    }
-
-    .hotspot {
-      cursor: pointer;
-      position: absolute;
-      opacity: 0;
-    }
-
-    body[can-show-hotspots] {
-      /* this helps hotspots work on iOS */
-      cursor: pointer;
-    }
-
-    body[can-show-hotspots] .hotspot {
-      background-color: rgba(239, 108, 0, .2);
-      box-shadow:
-          0 0 0 3px rgba(239, 108, 0, .5) inset,
-          0 4px 8px rgba(239, 108, 0, .25);
-    }
-
-    .highlight-hotspots .hotspot {
-      animation: hotspotAnimation .6s ease;
-    }
-
-    @keyframes hotspotAnimation {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-  </style>
-</head>
-<body class="is-loading"
-    >
-
-  <div class="loading-element">
-      <div class="loading-progress"></div>
-  </div>
-  <div class="prototype-container"></div>
-
-  <script>
-    const env = {
-      isIpad: navigator.userAgent.match(/iPad/),
-      isIphone: navigator.userAgent.match(/iPhone/),
-    };
-
-    class Proto {
-      constructor(prototypeData) {
-        this.prototypeData = prototypeData;
-        this.buildUi();
-      }
-
-      preloadImages() {
-        let $loadingProgress = $('.loading-progress');
-        let numLoaded = 0;
-        let numTotal = 0;
-
-        function updateProgress_() {
-          let scale = numTotal ? numLoaded / numTotal : 0;
-          $loadingProgress.css('transform', `scaleX(${scale})`);
-        }
-
-        updateProgress_();
-
-        function preloadImageUrl_(url) {
-          return new Promise((resolve, reject) => {
-            let img = document.createElement('img');
-            img.src = url;
-            img.onload = () => {
-              ++numLoaded;
-              updateProgress_();
-              resolve();
-            };
-            img.onerror = () => {
-              ++numLoaded;
-              updateProgress_();
-              console.error(`Error loading ${url}`); resolve();
-            };
-          });
-        }
-
-        let visitedArtboards = [];
-        let imageUrls = new Set([]);
-
-        let promises = [];
-        Object.keys(this.prototypeData.artboards).forEach(id => {
-          promises.push(preloadImageUrl_(`${id}.png`));
-          if (this.prototypeData.artboards[id].hasFixedLayers) {
-            promises.push(preloadImageUrl_(`${id}_fixed.png`));
-          }
-        });
-
-        numTotal = promises.length;
-        return Promise.all(promises);
-      }
-
-      buildUi() {
-        this.buildArtboards();
-
-        this.preloadImages().then(() => $('body').removeClass('is-loading'));
-
-        if (this.prototypeData.title) {
-          document.title = this.prototypeData.title;
-        }
-
-        $(window).on('hashchange', () => {
-          this.setArtboardVisible(this.getUrlInfo().artboardId);
-        });
-
-        $(document).click(() => {
-          $(document.body).removeClass('highlight-hotspots');
-          let f = document.body.offsetWidth;
-          $(document.body).addClass('highlight-hotspots');
-        });
-
-        $(window).on('resize', () => this.resize());
-
-        this.setArtboardVisible(this.getUrlInfo().artboardId);
-      }
-
-      resize() {
-        let deviceWidth = window.innerWidth;
-        let deviceHeight = window.innerHeight;
-
-        if (window.navigator.standalone && (env.isIpad || env.isIphone)) {
-          deviceWidth = screen.width;
-          deviceHeight = screen.height;
-        }
-
-        let width = this.startArtboard.viewportWidth || this.startArtboard.width;
-        let height = this.startArtboard.viewportHeight || this.startArtboard.height;
-        if (this.currentArtboard.viewportWidth && this.currentArtboard.viewportHeight) {
-          width = this.currentArtboard.viewportWidth;
-          height = this.currentArtboard.viewportHeight;
-        }
-
-        let xScale = deviceHeight / height;
-        let yScale = deviceWidth / width;
-        $('.prototype-container')
-            .css({
-              width: width,
-              height: height,
-              zoom: Math.min(1, Math.min(xScale, yScale)),
-            });
-      }
-
-      getUrlInfo() {
-        let hash = window.location.hash;
-
-        return {
-          artboardId: hash ? hash.substring(1) : this.prototypeData.flowStartArtboardId,
-        };
-      }
-
-      buildArtboards() {
-        Object.keys(this.prototypeData.artboards).forEach(id => {
-          let artboardData = this.prototypeData.artboards[id];
-          let $artboard = $('<div>')
-              .addClass('artboard')
-              .attr('data-artboard-id', id)
-              .appendTo('.prototype-container');
-
-          // add scrollable content
-          let $artboardScrollContainer = $('<div>')
-              .addClass('artboard-scroll-container')
-              .appendTo($artboard);
-          let $artboardScrollableContent = $('<div>')
-              .addClass('artboard-content')
-              .css({
-                backgroundImage: `url(${id}.png)`,
-                width: artboardData.width,
-                height: artboardData.height,
-              })
-              .appendTo($artboardScrollContainer);
-
-          // add fixed content
-          if (artboardData.hasFixedLayers) {
-            let $artboardFixedContainer = $('<div>')
-                .addClass('artboard-fixed-container')
-                .appendTo($artboard);
-            let $artboardFixedContent = $('<div>')
-                .addClass('artboard-content')
-                .css({
-                  backgroundImage: `url(${id}_fixed.png)`,
-                  width: artboardData.width,
-                  height: artboardData.height,
-                })
-                .appendTo($artboardFixedContainer);
-          }
-
-          if (id == this.prototypeData.flowStartArtboardId) {
-            // this is the start artboard
-            this.startArtboard = artboardData;
-            this.currentArtboard = artboardData;
-          }
-
-          artboardData.hotspots.forEach(hotspotData => {
-            let $hotspot = $('<div>')
-              .addClass('hotspot')
-              .attr('data-artboard-id', id)
-              .css({
-                left: hotspotData.rectangle.x,
-                top: hotspotData.rectangle.y,
-                width: hotspotData.rectangle.width,
-                height: hotspotData.rectangle.height,
-              })
-              .appendTo(hotspotData.isFixed
-                  ? $artboard // don't add to $artboardFixedContent because of pointer-events:none
-                  : $artboardScrollableContent);
-            $hotspot.click(event => {
-              this.gotoTarget(hotspotData.target)
-              event.stopPropagation();
-            });
-          });
-        });
-      }
-
-      gotoTarget(target) {
-        if (target == 'back') {
-          history.back();
-          return;
-        }
-
-        this.gotoArtboard(target);
-      }
-
-      gotoArtboard(artboardId) {
-        window.location.href= '#' + artboardId;
-      }
-
-      setArtboardVisible(artboardId) {
-        this.currentArtboard = this.prototypeData.artboards[artboardId];
-
-        $('.artboard-scroll-container').scrollLeft(0).scrollTop(0);
-
-        $(document.body).removeClass('highlight-hotspots');
-        $('.artboard').removeClass('is-active');
-        $(`.artboard[data-artboard-id="${artboardId}"]`).addClass('is-active');
-
-        this.resize();
-      }
-    }
-
-  </script>
-  <script>
-    new Proto(
-      {"title":"PORTFOLIO","flowStartArtboardId":"120ED87D-D5A4-4D85-B4A6-E9552700A8AA","artboards":{"120ED87D-D5A4-4D85-B4A6-E9552700A8AA":{"title":"Artboard","width":1920,"height":1080,"viewportWidth":1920,"viewportHeight":1080,"hotspots":[{"rectangle":{"x":291,"y":912,"width":215,"height":50},"target":"8C6241E5-6680-46E5-915C-804D8971DF29","isFixed":0},{"rectangle":{"x":643,"y":910,"width":215,"height":50},"target":"BA0C1C78-3D4D-4F25-BA5C-479A892B51E2","isFixed":0},{"rectangle":{"x":945,"y":903,"width":215,"height":50},"target":"F4E15165-F7FE-4D04-BFCB-A4290847DB9E","isFixed":0},{"rectangle":{"x":1326,"y":903,"width":215,"height":50},"target":"D123FBA5-E8FE-4367-9557-F123322B5FDB","isFixed":0}],"hasFixedLayers":false},"8C6241E5-6680-46E5-915C-804D8971DF29":{"title":"t","width":1920,"height":1848,"viewportWidth":1920,"viewportHeight":1080,"hotspots":[{"rectangle":{"x":2,"y":14,"width":234,"height":123},"target":"120ED87D-D5A4-4D85-B4A6-E9552700A8AA","isFixed":0}],"hasFixedLayers":false},"BA0C1C78-3D4D-4F25-BA5C-479A892B51E2":{"title":"Artboard","width":1920,"height":1848,"viewportWidth":1920,"viewportHeight":1080,"hotspots":[{"rectangle":{"x":0,"y":0,"width":234,"height":123},"target":"120ED87D-D5A4-4D85-B4A6-E9552700A8AA","isFixed":0}],"hasFixedLayers":false},"F4E15165-F7FE-4D04-BFCB-A4290847DB9E":{"title":"Artboard","width":1920,"height":1848,"viewportWidth":1920,"viewportHeight":1080,"hotspots":[{"rectangle":{"x":0,"y":14,"width":234,"height":123},"target":"120ED87D-D5A4-4D85-B4A6-E9552700A8AA","isFixed":0}],"hasFixedLayers":false},"D123FBA5-E8FE-4367-9557-F123322B5FDB":{"title":"video","width":1920,"height":1080,"viewportWidth":1920,"viewportHeight":1080,"hotspots":[{"rectangle":{"x":0,"y":0,"width":234,"height":123},"target":"120ED87D-D5A4-4D85-B4A6-E9552700A8AA","isFixed":0}],"hasFixedLayers":false}}}
-    );
-  </script>
-
-</body>
+				</table>
+			</div>
+	</div>
+	</body>
 </html>
